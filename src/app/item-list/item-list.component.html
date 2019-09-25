@@ -1,0 +1,18 @@
+<div class="container">
+  <h4>{{message}}</h4> 
+<br>
+<input type="text" id="items" [(ngModel)]="displayText" [class.formControl]="formControl"/>
+&nbsp;&nbsp;
+<a href="#" (click)="addToList(displayText)">
+    <img [src]="imgLocation" height="25px" width="25px">
+</a>
+<h4>{{displayText}}</h4>
+<body class='text-center'>
+    <div [class.addStyle]='addStyle'>
+        <div class='row' *ngFor='let item of listOfToDoItems'>
+          <div class='col'> {{item}}  </div>
+          <div class='col'> <input type="checkbox" (click)="removeItem(item)">  </div>
+        </div>
+        <h4 *ngIf="listOfToDoItems.length==0">{{displayNoItemsMsg}}</h4>
+    </div>
+</body>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap');
+
+.addStyle
+{
+    /*background: url('stickyNote.png') fixed center no-repeat;*/
+    border: 8px double darkturquoise;
+    font-size: 24px;
+}
+
+.addImg
+{
+    background: url('stickyNote.png') fixed center no-repeat;
+}
+
+.formControl
+{
+    width: 25%;
+    border-radius: 5px;
+}
+
+img
+{
+    height: 30px;
+    width: 30px;
+}
+
+.addFontStyle
+{
+    font-size: 16px;
+}
